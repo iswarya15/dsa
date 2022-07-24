@@ -17,6 +17,7 @@ var insert = function (intervals, newInterval) {
   // curr interval: [1,2] newInterval:  [4,8]: no overlapping
   // 1----2 
   //          4----8
+  //                   12 ---- 16
   while (index < intervals.length && intervals[index][1] < newInterval[0]) {
     result.push(intervals[index]);
     index++;
